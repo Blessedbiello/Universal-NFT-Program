@@ -1,6 +1,12 @@
 # Universal Solana NFT Program
 
-A comprehensive Solana NFT program that enables secure cross-chain NFT transfers and interactions between ZetaChain and Solana, addressing all Solana-specific challenges while maintaining compatibility with ZetaChain's messaging protocols.
+[![Solana](https://img.shields.io/badge/Solana-Devnet-9945FF?style=for-the-badge&logo=solana)](https://explorer.solana.com/address/Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i?cluster=devnet)
+[![Program Status](https://img.shields.io/badge/Program-Deployed%20%26%20Verified-success?style=for-the-badge)](https://explorer.solana.com/address/Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i?cluster=devnet)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
+
+A comprehensive Solana NFT program that enables secure cross-chain NFT transfers and interactions between ZetaChain and Solana. **✅ Successfully deployed and tested on Solana devnet**.
+
+**🚀 Program ID**: `Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i`
 
 ## 🏗️ Architecture Overview
 
@@ -259,23 +265,67 @@ const tx = await program.methods
 
 ## 🚀 Deployment
 
-### Devnet Deployment
+### Live Deployment Information 📍
+
+**🌐 Devnet Deployment (Active)**
+- **Program ID**: `Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i`
+- **Network**: Solana Devnet
+- **Deployment Transaction**: `2Wm9j5NDDsTJxzUFHQgoNh8iMLR17QkzFAEp3h3QsrP9TcarGhopBusBCVghMzovfy5rmS1xqpq2ewWaZEyiuynE`
+- **Program Authority**: `3fMoA42W8MzvA86ZUFiRj5ayoEuwmDkz1qtZGiY5ooWR`
+- **Program Data Address**: `BUZp1BgoSeDxwdmqAkKPPKbvXgJHiNNabXNu3BNdpK8p`
+- **Deployment Slot**: 404213410
+- **Program Size**: 540,608 bytes (0x83fc0)
+
+**🔗 Explorer Links**
+- [Program Account](https://explorer.solana.com/address/Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i?cluster=devnet)
+- [Deployment Transaction](https://explorer.solana.com/tx/2Wm9j5NDDsTJxzUFHQgoNh8iMLR17QkzFAEp3h3QsrP9TcarGhopBusBCVghMzovfy5rmS1xqpq2ewWaZEyiuynE?cluster=devnet)
+
+**📋 Program Configuration**
+- **Program Config PDA**: `8qKo5rcxSocSEhG1dopkgp8QvRxCkPCDVJNx2v7rrKLr` (Bump: 252)
+- **Status**: ✅ Deployed and Verified
+- **Initialization**: Pending (ready for `initialize_program` call)
+
+### Deployment Process
 ```bash
 # Set cluster to devnet
 solana config set --url devnet
 
-# Deploy program
-anchor deploy --program-name universal-nft-program
+# Build the program
+cargo build-sbf
 
-# Update program ID in code if needed
-anchor keys sync
+# Deploy program
+solana program deploy target/deploy/universal_nft_program.so
+
+# Verify deployment
+node test-deployment.js
+```
+
+### Quick Test (Devnet)
+You can immediately test the deployed program:
+
+```bash
+# Clone the repository
+git clone https://github.com/Blessedbiello/Universal-NFT-Program.git
+cd Universal-NFT-Program
+
+# Install dependencies
+npm install
+
+# Run deployment verification test
+node test-deployment.js
+
+# Expected output:
+# ✅ Program is deployed and accessible  
+# ✅ Program is accessible via RPC
+# ✅ PDA derivation works correctly
 ```
 
 ### Production Considerations
 - Set proper TSS address after deployment
-- Configure gateway program ID
+- Configure gateway program ID for mainnet
 - Implement monitoring for cross-chain operations
 - Set up proper error alerting
+- Validate all cross-chain message signatures
 
 ## 🛠️ Development Roadmap
 
