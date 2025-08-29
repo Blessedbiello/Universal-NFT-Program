@@ -10,6 +10,10 @@ A comprehensive Solana NFT program that enables secure cross-chain NFT transfers
 
 ## 🏗️ Architecture Overview
 
+![Universal NFT Architecture](./architecture-diagram.svg)
+
+*[View detailed architectural diagrams →](./ARCHITECTURE_DIAGRAM.md)*
+
 This Universal NFT Program implements a sophisticated cross-chain infrastructure that:
 
 - **Cross-Chain Security**: Integrates with ZetaChain's TSS (Threshold Signature Scheme) for secure cross-chain operations
