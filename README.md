@@ -2,12 +2,12 @@
 
 [![Solana](https://img.shields.io/badge/Solana-Devnet-9945FF?style=for-the-badge&logo=solana)](https://explorer.solana.com/address/Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i?cluster=devnet)
 [![Program Status](https://img.shields.io/badge/Program-Deployed%20%26%20Verified-success?style=for-the-badge)](https://explorer.solana.com/address/Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i?cluster=devnet)
-[![ZetaChain PR](https://img.shields.io/badge/ZetaChain-Pull%20Request-00D4AA?style=for-the-badge&logo=github)](https://github.com/zeta-chain/standard-contracts/pull/YOUR_PR_NUMBER)
+[![ZetaChain PR](https://img.shields.io/badge/ZetaChain-Pull%20Request-00D4AA?style=for-the-badge&logo=github)](https://github.com/zeta-chain/standard-contracts/pull/99)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
 A comprehensive Solana NFT program that enables secure cross-chain NFT transfers and interactions between ZetaChain and Solana. **✅ Successfully deployed and tested on Solana devnet**.
 
-**📋 ZetaChain Bounty Submission**: [View Pull Request →](https://github.com/zeta-chain/standard-contracts/pull/YOUR_PR_NUMBER)
+**📋 ZetaChain Bounty Submission**: [View Pull Request →](https://github.com/zeta-chain/standard-contracts/pull/99)
 
 **🚀 Program ID**: `Gc1BJg4sYAYGnKBStAHLTdVRLR3fA7DPc7t9G7vjKa1i`
 
